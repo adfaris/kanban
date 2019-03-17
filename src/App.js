@@ -1,28 +1,38 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import Column from '../src/Components/Column'
 import './App.css';
 
+// const DIRECTION_LEFT = -1
+// const DIRECTION_RIGHT = 1
+
 class App extends Component {
-  render() {
+  constructor (props) {
+    super(props)
+    this.state = {
+      columns: [
+        {
+          name: 'Backlog',
+          cards: [{ name: 'Card A' }]
+        },
+        {
+          name: 'Doing',
+          cards: [{ name: 'Card B' }]
+        },
+        {
+          name: 'Done',
+          cards: [{ name: 'Card C' }]
+        }
+      ]
+    }
+  }
+
+  render () {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className='App'>
+        {JSON.stringfy(this.state)}
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
