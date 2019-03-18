@@ -16,11 +16,17 @@
 
 import React from 'react'
 import '../App.css'
-export default({card}) =>  (
+export default({
+  card, 
+  canMoveLeft,
+  canMoveRight,
+  onMoveLeft, 
+  onMoveRight
+}) =>  (
   <div className='card'>
-    <button className='moveLeft'>{'<'}</button>
+    {canMoveLeft && <button onClick={onMoveLeft} className='moveLeft'>{'<'} </button>}
     <span className='title'>{card.name}</span> 
-    <button className='moveRight'>{'>'}</button>
+    {canMoveRight && <button onClick= {onMoveRight} className='moveRight'>{'>'}</button>}
   </div>
 
 )

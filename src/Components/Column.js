@@ -27,7 +27,12 @@ import '../App.css'
 //   </div>
 // )
 
-export default ({column}) => (
+export default ({
+  column,
+  columnIndex,
+  onMoveRight,
+  onMoveLeft
+}) => (
   <div className='column'>
     {/* I am a colum */}
     <h1>{column.name}</h1>
@@ -36,6 +41,10 @@ export default ({column}) => (
         key={cardIndex}
         card={card}
         cardIndex={cardIndex}
+        canMoveLeft={columnIndex !==0}
+        canMoveRight={columnIndex !==2}
+        onMoveLeft={()=> onMoveLeft(cardIndex)}
+        onMoveRight={()=> onMoveRight(cardIndex)}
       />
     ))}
   </div>
