@@ -31,7 +31,8 @@ export default ({
   column,
   columnIndex,
   onMoveRight,
-  onMoveLeft
+  onMoveLeft,
+  onAddCard
 }) => (
   <div className='column'>
     {/* I am a colum */}
@@ -47,5 +48,6 @@ export default ({
         onMoveRight={()=> onMoveRight(cardIndex)}
       />
     ))}
+    <button onClick={onAddCard}>+</button>
   </div>
 )

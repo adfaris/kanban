@@ -26,7 +26,7 @@ class App extends Component {
     }
   }
 
-  handleAdd = columnIndex => {
+  handleAdd = (columnIndex) => {
     const name= window.prompt('Name?')
     if(!name) return
     const card= {name}
@@ -39,7 +39,7 @@ class App extends Component {
 
   handleMove = (columnIndex, cardIndex, direction) => {
     this.setState(prevState=>{
-      const {columns} = prevState
+      const { columns } = prevState
       const [card] = columns[columnIndex].cards.splice(cardIndex,1)
       columns[cardIndex + direction].cards.push(card)
       return {columns}
@@ -56,6 +56,7 @@ class App extends Component {
             key={columnIndex}
             onMoveLeft={cardIndex=> this.handleMove(columnIndex, cardIndex,DIRECTION_LEFT)}
             onMoveRight={cardIndex=> this.handleMove(columnIndex, cardIndex, DIRECTION_RIGHT)}
+            onAddCard={()=>this.handleAdd(columnIndex)}
           />
         ))}
       </div>
