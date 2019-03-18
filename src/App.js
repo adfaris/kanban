@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-// import Column from '../src/Components/Column'
-import './App.css';
+import React, { Component } from 'react'
+import Column from '../src/Components/Column'
+import './App.css'
 
 // const DIRECTION_LEFT = -1
 // const DIRECTION_RIGHT = 1
@@ -29,7 +29,14 @@ class App extends Component {
   render () {
     return (
       <div className='App'>
-        {JSON.stringfy(this.state)}
+        {/* {JSON.stringify(this.state)} */}
+        {this.state.columns.map((column, columnIndex) => (
+          <Column
+            column={column}
+            columnIndex={columnIndex}
+            key={columnIndex}
+          />
+        ))}
       </div>
     )
   }
