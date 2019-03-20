@@ -118,14 +118,23 @@ class App extends Component {
     return (
       <div className="App">
         {this.state.columns.map((column, columnIndex) => (
-          <Column
-            column={column}
-            columnIndex={columnIndex}
-            key={columnIndex}
-            onMoveLeft={cardIndex => this.handleMove(columnIndex, cardIndex, DIRECTION_LEFT)}
-            onMoveRight={cardIndex => this.handleMove(columnIndex, cardIndex, DIRECTION_RIGHT)}
-            onAddCard={() => this.handleAdd(columnIndex)}
-          />
+          <div>
+            {column.name}
+            {column.cards.map((card) =>(
+              <div>
+                {card.name}
+              </div>
+            )
+              )}
+          </div>
+          // <Column
+          //   column={column}
+          //   columnIndex={columnIndex}
+          //   key={columnIndex}
+          //   onMoveLeft={cardIndex => this.handleMove(columnIndex, cardIndex, DIRECTION_LEFT)}
+          //   onMoveRight={cardIndex => this.handleMove(columnIndex, cardIndex, DIRECTION_RIGHT)}
+          //   onAddCard={() => this.handleAdd(columnIndex)}
+          // />
         ))}
       </div>
     );
