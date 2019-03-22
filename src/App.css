@@ -2,6 +2,7 @@
     display:flex;
     padding: 1rem;
     margin: 2rem;
+    background-color: aliceblue;
 }
 .column {
     border: #eee 1px solid;
@@ -9,13 +10,18 @@
     flex-grow: 1;
     text-align: center;
 }
+.column h1 {
+    background-color: antiquewhite;
+}
 .card {
     border: #ddd 1px solid;
     padding: 2rem;
     display: flex;
     flex-grow: 1;
+
 }
 .card .title {
     flex-grow: 1;
     text-align: center;
+    
 }
