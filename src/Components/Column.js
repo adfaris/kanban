@@ -72,11 +72,11 @@ export default ({
         card={card}
         cardIndex={cardIndex}
         canMoveLeft={columnIndex !== 0}
-        canMoveRight={columnIndex !== 2}
+        canMoveRight={columnIndex !== 3}
         onMoveLeft={() => onMoveLeft(cardIndex)}
         onMoveRight={() => onMoveRight(cardIndex)}
       />
     ))}
-    <button onClick={onAddCard}>+</button>
+    <button onClick={onAddCard}>+ Add another card</button>
   </div>
 )

@@ -79,16 +79,20 @@ class App extends Component {
     this.state = {
       columns: [
         {
-          name: "Backlog",
-          cards: [{ name: "Card A" }]
+          name: "A.D.",
+          cards: [{ name: "Eggs" }, {name: 'bread'}]
         },
         {
-          name: "Doing",
-          cards: [{ name: "Card B" }]
+          name: "Dina",
+          cards: [{ name: "Coffee"}, {name:'tea'} ]
         },
         {
-          name: "Done",
-          cards: [{ name: "Card C" }]
+          name: "Josiah",
+          cards: [{ name: "hot chocolate" }, {name: 'smores'}]
+        },
+        {
+          name: "Zoe",
+          cards: [{ name: "milk" }, {name:'cereal'}]
         }
       ]
     };
