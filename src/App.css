@@ -1,8 +1,16 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .App {
+    height: auto;
     display:flex;
     padding: 1rem;
     margin: 2rem;
     background-color: aliceblue;
+    background-size: cover;
 }
 .column {
     border: #eee 1px solid;
@@ -12,6 +20,7 @@
 }
 .column h1 {
     background-color: antiquewhite;
+    background-size: cover;
 }
 .card {
     border: #ddd 1px solid;

@@ -31,7 +31,7 @@ class App extends Component {
     };
   }
 
-  handleAdd = columnIndex => {
+  handleAdd = (columnIndex) => {
     //  accept column name from users
     const name = window.prompt('Name?')
     //  if no name provided, return
@@ -58,15 +58,6 @@ class App extends Component {
     return (
       <div className="App">
         {this.state.columns.map((column, columnIndex) => (
-          // <div>
-          //   {column.name}
-          //   {column.cards.map((card) =>(
-          //     <div>
-          //       {card.name}
-          //     </div>
-          //   )
-          //     )}
-          // </div>
           <Column
             column={column}
             columnIndex={columnIndex}
