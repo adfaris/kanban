@@ -11,6 +11,8 @@
     margin: 2rem;
     background-color: aliceblue;
     background-size: cover;
+    text-transform: uppercase;
+
 }
 .column {
     border: #eee 1px solid;
@@ -18,7 +20,7 @@
     flex-grow: 1;
     text-align: center;
 }
-.column h1 {
+.column h1 {                
     background-color: antiquewhite;
     background-size: cover;
 }
