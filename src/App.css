@@ -8,8 +8,8 @@
 .App {
     height: auto;
     display:flex;
-    padding: 1rem;
-    margin: 2rem;
+    padding: 2rem;
+    margin: 4rem;
     background-color: aliceblue;
     background-size: cover;
     text-transform: uppercase;
@@ -17,7 +17,7 @@
 }
 .column {
     border: #eee 1px solid;
-    margin: 2rem;
+    margin: 4rem;
     flex-grow: 1;
     text-align: center;
 }
@@ -27,7 +27,7 @@
 }
 .card {
     border: #ddd 1px solid;
-    padding: 2rem;
+    padding: 4rem;
     display: flex;
     flex-grow: 1;
 
