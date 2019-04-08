@@ -36,10 +36,11 @@ body{
     padding: 4rem;
     display: flex;
     flex-grow: 1;
-
 }
+
 .card .title {
     flex-grow: 1;
     text-align: center;
+    text-decoration: bold
     
 }
