@@ -19,6 +19,7 @@ body{
     background-color: aliceblue;
     background-size: cover;
     text-transform: uppercase;
+    text-decoration: bold;
 
 }
 .column {
