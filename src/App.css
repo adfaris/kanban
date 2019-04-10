@@ -29,8 +29,8 @@ body{
     text-align: center;
 }
 .column h1 {                
-    background-color: antiquewhite;
-    background-size: cover;
+    /* background-color: antiquewhite; */
+    /* background-size: cover; */
 }
 .card {
     border: #ddd 1px solid;
