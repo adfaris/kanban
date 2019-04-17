@@ -33,7 +33,7 @@ body{
     /* background-size: cover; */
 }
 .card {
-    border: #ddd 1px solid;
+    border: #fff 1px solid;
     padding: 4rem;
     display: flex;
     flex-grow: 1;
