@@ -29,7 +29,7 @@ body{
     text-align: center;
 }
 .column h1 {                
-    background-color: blue;
+    background-color: #eee;
     /* background-size: cover; */
 }
 .card {
