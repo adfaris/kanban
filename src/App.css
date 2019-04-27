@@ -18,7 +18,7 @@ body{
     margin: 6rem;
     background-color: #FFD;
     background-size: cover;
-    text-transform: uppercase;
+    text-transform:capitalize;
     text-decoration: bold;
 
 }
