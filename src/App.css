@@ -2,7 +2,7 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    /* font-size:62.5% */
+    font-size:62.5%
 }
 body{
     box-sizing: border-box;
@@ -24,17 +24,17 @@ body{
 }
 .column {
     border: #eee 1px solid;
-    margin: 4rem;
+    margin: 6rem;
     flex-grow: 1;
     text-align: center;
 }
 .column h1 {                
     background-color: #eee;
-    /* background-size: cover; */
+    background-size: cover;
 }
 .card {
     border: #fff 1px solid;
-    padding: 4rem;
+    padding: 6rem;
     display: flex;
     flex-grow: 1;
 }
