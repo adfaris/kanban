@@ -28,8 +28,8 @@ body{
     flex-grow: 1;
     text-align: center;
 }
-.column h1 {                
-    background-color: #eee;
+.column h1 {
+    background-color: #eef;
     background-size: cover;
 }
 .card {
@@ -38,7 +38,6 @@ body{
     display: flex;
     flex-grow: 1;
 }
-
 .card .title {
     flex-grow: 1;
     text-align: center;
