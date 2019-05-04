@@ -19,7 +19,7 @@ body{
     margin: 6rem;
     background-color: #FFD;
     background-size: cover;
-    text-transform:capitalize;
+    text-transform:uppercase;
     text-decoration: bold;
 
 }
