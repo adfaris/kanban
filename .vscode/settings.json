@@ -1,0 +1,10 @@
+{
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "prettier.stylelintIntegration": true,
+    "prettier.requireConfig": true,
+    "prettier.semi": false,
+    "emmet.includeLanguages": {
+        "javascript":"javascriptreact"
+    }
+}
